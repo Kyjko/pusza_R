@@ -34,5 +34,17 @@ for(i in seq(1, N)) {
 # sort SD_R
 SD_R <- SD_R[, order(SD_R[2, ], decreasing=F)]
 
+sharpe_ratios <- rep(0, N)
+
+for(i in seq(1, N)) {
+  sharpe_ratios[i] <- (SD_R[2, i]-rf)/SD_R[1, i]
+}
+
+max_sharpe_ratio <- max(sharpe_ratios)
+
 # plot portfolio volatility ~ return
 matplot(SD_R[1, ], SD_R[2, ], type="l")
+abline(coef=c(rf, max_sharpe_ratio))
+
+
+
