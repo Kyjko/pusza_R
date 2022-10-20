@@ -1,3 +1,3 @@
 # pusza_R
 
-Itt gyűjtöm a PÜSZA (pénzügyi számítások) tárgyhoz kapcsolódó R kódjaimat
+Itt gyűjtöm a PÜSZA (pénzügyi számítások) tárgyhoz kapcsolódó R kódjaimat lol
